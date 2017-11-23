@@ -53,8 +53,20 @@ resource "github_branch_protection" "terraform-plans_master" {
 
 # members
 
+resource "github_membership" "membership_clux" {
+  username = "clux"
+  role = "admin"
+}
 resource "github_membership" "membership_bencord0" {
   username = "bencord0"
+  role = "member"
+}
+resource "github_membership" "membership_johanbrandhorst" {
+  username = "johanbrandhorst"
+  role = "member"
+}
+resource "github_membership" "membership_gleaver" {
+  username = "gleaver"
   role = "member"
 }
 
